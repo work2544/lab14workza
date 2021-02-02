@@ -17,3 +17,28 @@ int main(){
 	
 	return 0;
 }
+void shuffle(int &a,int &b,int &c,int &d)
+{
+ int rannum=rand()%6+1;
+ switch (rannum)
+ {
+ case 1:
+	 swap(a,b);
+	 break;
+case 2:
+	 swap(a,c);
+	 break;
+case 3:
+	 swap(a,d);
+	 break;
+case 4:
+	 swap(b,c);
+	 break;
+case 5:
+	 swap(d,b);
+	 break;
+case 6:
+	 swap(c,d);
+	 break; 
+ }
+}
